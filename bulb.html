@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bomb ON/OFF</title>
+</head>
+<body>
+  <script>
+    function turnOnOff() {
+      let image = document.getElementById("Image");
+      if (image.src.includes("bomboff.jpg")) {
+        image.src = "image/bomb.jpg";
+      } else {
+        image.src = "image/bomboff.jpg";
+      }
+    }
+  </script>
+  <img id="Image"
+  onclick="turnOnOff()"
+    src="image/bomboff.jpg"
+  />
+  <p>Click on the BOMB to turn it ON and OFF</p>
+</body>
+</html>
